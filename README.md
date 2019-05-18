@@ -64,6 +64,6 @@ First Tab:
 
 
 #### Sources
-*[1] Aha, D., and Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." University of California 3.1 (1988): 3-2.
-*[2] Graber, Mark L. "The incidence of diagnostic error in medicine." BMJ Qual Saf 22.Suppl 2 (2013): ii21-ii27.
+>[1] Aha, D., and Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." University of California 3.1 (1988): 3-2.
+>[2] Graber, Mark L. "The incidence of diagnostic error in medicine." BMJ Qual Saf 22.Suppl 2 (2013): ii21-ii27.
 
