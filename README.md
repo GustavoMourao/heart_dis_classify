@@ -58,7 +58,7 @@ First Tab:
 ![Image2](https://github.com/GustavoMourao/heart_dis_classify/results_graphs/SVM_ROC.png)
 
 
-ROC curve ANN:
+> ROC curve ANN:
 
 ![Image3](https://github.com/GustavoMourao/heart_dis_classify/results_graphs/ANN_ROC.png)
 
