@@ -53,6 +53,16 @@ First Tab:
 
 ![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/SVM_parameters.png)
 
+> ROC curve ANN:
+
+![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/SVM_ROC.png)
+
+
+> ROC curve ANN:
+
+![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/ANN_ROC.png)
+
+
 #### Sources
 [1] Aha, D., and Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." University of California 3.1 (1988): 3-2.
 [2] Graber, Mark L. "The incidence of diagnostic error in medicine." BMJ Qual Saf 22.Suppl 2 (2013): ii21-ii27.
