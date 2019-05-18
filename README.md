@@ -51,16 +51,16 @@ First Tab:
 #### Partial Results
 > SVM paramaters analysis:
 
-![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/SVM_parameters.png)
+![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_graphs/SVM_parameters.png)
 
 > ROC curve ANN:
 
-![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/SVM_ROC.png)
+![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_graphs/SVM_ROC.png)
 
 
 > ROC curve ANN:
 
-![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/ANN_ROC.png)
+![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_graphs/ANN_ROC.png)
 
 
 #### Sources
