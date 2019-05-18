@@ -1,51 +1,59 @@
 # heart_dis_classify
 
-Project objective: Classification heart disease based on 13 attributes.
+heart_dis_classify is a project that aims to that classify heart disease based on 13 attributes. 
 
-Data is provided courtesy of the Cleveland Heart Disease Database via the UCI Machine Learning repository.
-
-Aha, D., and Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." University of California 3.1 (1988): 3-2.
-
-Models applied
-
-  - ANN (MLP)
-  - SVM
+The set of data is provided courtesy of the Cleveland Heart Disease Database via the UCI Machine Learning repository [1].
 
 ### This project uses this dependences:
 
-* [sklearn] - 
-* [matplotlib] - awesome web-based text editor
-* [numpy] - Markdown parser done right. Fast and easy to extend.
-* [unittest] - great UI boilerplate for modern web apps
+* [python] : 3.7.1 
+* [scikit-learn] : 0.20.0
+* [matplotlib] : 3.2.0
+* [numpy] : 1.15.4
+* [pytest] : 4.5.0
 
-### Installation
-
-Install the dependencies as:
-
+User instalation:
 ```sh
-
+pip install scikit-learn
 ```
+and so on for the other packages..
 
-For production environments...
+### Model description
 
-```sh
+It was applied/compared two models:
 
-```
+  - ANN (MLP): Artificial Neural Network (Multilayer Perceptron)
+  - SVM: Support Vector Machine 
 
-### Run the project
+#### Overview of Models 
+The project evaluates the best parameters for each model. 
+
+In this direction, from de SVM model it is evaluate the influence of parameters C (soft margin cost function) and gamma (Kernel coefficient) on accuracy of training dataset.
+
+From other side the ANN mode it is evaluate through 3 hidden layers. In this sense, is evaluated the influence of the number of neurons on first layer (by keep 500 neurons on the other two layers). The best models is saved based on a precision threshold of  85% [2].
+
+### Overview of Files
 
 First Tab:
-```sh
+> eval_ANN.py: Obtain (train and save) best ANN models from comparing the highest precision.[2]
 
-```
+> eval_SVM.py: Obtain representation of best parameters (C and gamma) of SVM that returns high accuracy. Save model with best features.
 
-```sh
+> split_set_data.py: Separates raw data between train (70%) and test(30%) data. It wasn't used dev data in this version.
 
-```
+> split_set_data.py: Separates raw data between train (70%) and test(30%) data. It wasn't used dev data in this version.
+
+> metric_eval_response_ROC.py: Evaluation the models from the ROC curve (adopted evaluation metric). ROC (Receiver Operating Characteristics) is a widely metric used to evaluate the performance of binary classificators. As higher the Area Under The Curve (AUC), better is the model.
+
+> unit_test_eval_methods.py: Unit test that evaluates the SVM and ANN models. It's expected that, the average precision of the saved models (as .pkl file) returns a precision higher than 60% (for SVM) and higher than 80% (for ANN).
+
 
 #### Partial Results
+> SVM paramaters analysis:
 
+![alt text](https://github.com/GustavoMourao/heart_dis_classify/results_grpahs/SVM_parameters.png)
 
 #### Sources
-
+[1] Aha, D., and Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." University of California 3.1 (1988): 3-2.
+[2] Graber, Mark L. "The incidence of diagnostic error in medicine." BMJ Qual Saf 22.Suppl 2 (2013): ii21-ii27.
 
